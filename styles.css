@@ -2,8 +2,8 @@
     box-sizing: border-box;
     margin: 0 auto;
     Font-size: 18px;
-    max-width: 375px;
     width: 100%;
+    padding: 0;
 }
 header{
     text-align: center;
@@ -15,6 +15,9 @@ h1{
     padding: 50px;
     text-transform: uppercase;
     text-align: center;
+}
+.navigation{
+    display: none;
 }
 .nav{
     background: #3ebfff;
@@ -50,6 +53,10 @@ h1{
    color: hsl(210, 4%, 67%);
 
 }
+
+.transform-two{
+    display: none;
+}
 .section-one{
     text-align: center;
     background:hsl(0, 0%, 100%);
@@ -65,6 +72,9 @@ h1{
 .section-two{
     text-align: center;
     padding-top: 1.875em;
+}
+.standout-two{
+    display: none;
 }
 .section-two p{
     line-height: 1.5;
@@ -94,18 +104,19 @@ h1{
     padding-bottom: 1.875em;
     line-height: 1.5;
     color: hsl(167, 40%, 24%);
+    margin: 0;
 
 }
 .section-three p , .section-three h2{
     background: #94d4c4;
     text-align : center;
-    padding-top: 30px;
+    padding-top: 1.875em;
     margin: 0;
 }
 .section-four p{
     margin: 0;
     line-height: 1.5;
-    padding-bottom: 30px;
+    padding-bottom: 1.875em;
 }
 .section-four p , .section-four h2{
     background: #67c8ff;
@@ -165,8 +176,90 @@ h1{
 }
 .section-seven img{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 20px;
     padding-top: 2.5em;
     padding-bottom: 2.5em;
+}
+
+@media(min-width: 900px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .icon-hamburger{
+        display: none;
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        justify-items: center;
+    }
+
+    .navigation{
+        display: inline;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .section-one{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+        padding: 0;
+    }
+    .paragraph-one{
+        width: 100%;
+        box-sizing: border-box;
+        text-align: left;
+        padding: 30px;
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+    .transform-one{
+        display: none;
+    }
+    .transform-two{
+        display: inline;
+        width: 100%;
+        margin-bottom: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-two{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+    }
+    .standout-one{
+        display: none;
+    }
+    .standout-two{
+        display: inline;
+    }
+    .paragraph-two{
+        box-sizing: border-box;
+        text-align: left;
+        padding: 50px;
+        margin-top: 0px;
+        padding-top: 0;
+    }
+
+    .two-sections{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section-five{
+        display: flex;
+        justify-content: space-between;
+    }
+    .section-six{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr)
+    }
+ 
 }
