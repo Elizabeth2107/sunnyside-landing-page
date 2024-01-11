@@ -4,6 +4,7 @@
     Font-size: 18px;
     width: 100%;
     padding: 0;
+    font-family:'Barlow', sans-serif;
 }
 header{
     text-align: center;
@@ -15,6 +16,8 @@ h1{
     padding: 50px;
     text-transform: uppercase;
     text-align: center;
+    padding-top: 80px;
+    letter-spacing: 7px;
 }
 .navigation{
     display: none;
@@ -27,10 +30,14 @@ h1{
     display: flex;
     justify-content: left;
 }
-.icon-hamburger{
-    width: 30px;
+.hamburger{
     display: flex;
-    justify-content: right;
+    justify-content: space-evenly;
+    width: 40px;
+    padding-top: 30px;
+}
+.icon-hamburger{
+    margin-left: 200px;
 }
 .navbar img{
     display:flex;
@@ -87,7 +94,7 @@ h1{
     text-transform: uppercase;
     color:hsl(232, 10%, 55%);
     font-weight: 900;
-    
+    margin-bottom: 0;
 }   
 .section-two p, .section-two h2{
     padding-top: 1.875em;
@@ -134,6 +141,7 @@ h1{
    display: block;
    padding: 2.5em;
    width: 150px;
+   padding-top: 50px;
 }
 .section-five h3{
     font-weight: 900;
@@ -150,7 +158,7 @@ h1{
 .client-test{
     font-weight: 900;
     padding-top: 1.875em;
-    padding-bottom: 1.875em;
+    padding-bottom: 30px;
     color: hsl(210, 4%, 67%);
     text-transform: uppercase;
     text-indent: 1;
@@ -181,8 +189,7 @@ h1{
     padding-top: 2.5em;
     padding-bottom: 2.5em;
 }
-
-@media(min-width: 900px){
+@media(min-width: 950px){
     body{
         margin: 0;
         padding: 0;
@@ -196,13 +203,39 @@ h1{
         padding-top: 20px;
         justify-items: center;
     }
+    .logo{
+        padding-left: 70px;
+        padding-top: 0;
+    }
 
     .navigation{
         display: inline;
+        flex-wrap: nowrap;
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+    nav{
+        margin-left: 200px;
+    }
+    .navbar{
+        padding-right: 0;
+        margin-right: 0;
+        width: 50%;
     }
     a{
         text-decoration: none;
         color: #fff;
+        margin-left: 40px;
+        padding-top: 30px;
+        margin-right: 0;
+    }
+    a:hover{
+        background: #fff;
+        color: hsl(198, 62%, 26%);
+        border: 1px solid #fff;
+        border-radius: 30px;
+        text-decoration: none;
+        padding: 15px;
     }
     
     .section-one{
@@ -211,13 +244,17 @@ h1{
         margin: 0;
         padding: 0;
     }
+    .title-one{
+        padding-top: 70px;
+    }
     .paragraph-one{
         width: 100%;
         box-sizing: border-box;
         text-align: left;
-        padding: 30px;
+        padding: 40px;
         padding-top: 0;
         margin-bottom: 0;
+        padding-bottom: 0;
     }
     .transform-one{
         display: none;
@@ -229,11 +266,15 @@ h1{
         padding: 0;
         margin: 0;
     }
+    .title-two{
+        padding-top: 150px;
+    }
 
     .section-two{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin: 0;
+        margin-top: 0;
+        padding-top: 0;
     }
     .standout-one{
         display: none;
@@ -244,22 +285,36 @@ h1{
     .paragraph-two{
         box-sizing: border-box;
         text-align: left;
-        padding: 50px;
+        padding: 40px;
         margin-top: 0px;
+        padding-bottom: 0;
         padding-top: 0;
     }
 
     .two-sections{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin-top: 0;
     }
-    .section-five{
-        display: flex;
-        justify-content: space-between;
+    .clients{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
     }
+    .section-five p{
+        margin-right: 20px;
+    }
+    h3{
+        margin-top: 50px;
+    }
+
     .section-six{
         display: grid;
         grid-template-columns: repeat(4, 1fr)
     }
+    .section-seven ul{
+        width: 40%;
+    }
+    
  
 }
